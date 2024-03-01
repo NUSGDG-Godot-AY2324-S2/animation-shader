@@ -1,0 +1,149 @@
+[gd_scene load_steps=34 format=3 uid="uid://cprm0ia0y1040"]
+
+[ext_resource type="Script" path="res://obstacle/obstacle.gd" id="1_2ewal"]
+[ext_resource type="Texture2D" uid="uid://c4d4sdcyty03u" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00000.png" id="1_5f3mb"]
+[ext_resource type="Texture2D" uid="uid://debndaov5e0b0" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00001.png" id="2_2hgj5"]
+[ext_resource type="Texture2D" uid="uid://cynq8nyqyqah3" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00002.png" id="3_fx4kr"]
+[ext_resource type="Texture2D" uid="uid://sh2e7nyef44k" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00003.png" id="4_pc8jb"]
+[ext_resource type="Texture2D" uid="uid://dxh6v3ufsy4ns" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00004.png" id="5_tbasi"]
+[ext_resource type="Texture2D" uid="uid://bsw1iwu4lgxrm" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00005.png" id="6_iunso"]
+[ext_resource type="Texture2D" uid="uid://bpjt1uwis8qr1" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00006.png" id="7_gcvix"]
+[ext_resource type="Texture2D" uid="uid://brruyij021j05" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00007.png" id="8_do1ws"]
+[ext_resource type="Texture2D" uid="uid://chlnrv1w4bwm6" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00008.png" id="9_0hiih"]
+[ext_resource type="Texture2D" uid="uid://cykpplvuq0nnn" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00009.png" id="10_6daq1"]
+[ext_resource type="Texture2D" uid="uid://dosmgum1mlgjq" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00010.png" id="11_h7ug2"]
+[ext_resource type="Texture2D" uid="uid://cij7x38op4vlh" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00011.png" id="12_cgt3y"]
+[ext_resource type="Texture2D" uid="uid://bt6teljdtslac" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00012.png" id="13_33dj4"]
+[ext_resource type="Texture2D" uid="uid://xu23gjimdesn" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00013.png" id="14_gf762"]
+[ext_resource type="Texture2D" uid="uid://uli6t5kdaju8" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00014.png" id="15_uk6d1"]
+[ext_resource type="Texture2D" uid="uid://cx7o4dxtb0xkm" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00015.png" id="16_fkpby"]
+[ext_resource type="Texture2D" uid="uid://b53yaq20c5fvh" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00016.png" id="17_2ikgr"]
+[ext_resource type="Texture2D" uid="uid://vryasjan6r73" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00017.png" id="18_x8cf2"]
+[ext_resource type="Texture2D" uid="uid://l1wmh25enxj2" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00018.png" id="19_dsigg"]
+[ext_resource type="Texture2D" uid="uid://b3q2yenv14nxh" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00019.png" id="20_lxg6c"]
+[ext_resource type="Texture2D" uid="uid://ckyk6as2tigpx" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00020.png" id="21_tfwru"]
+[ext_resource type="Texture2D" uid="uid://7ilnpwohki54" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00021.png" id="22_6eu2a"]
+[ext_resource type="Texture2D" uid="uid://b6h8t1frr8t5p" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00022.png" id="23_sin3a"]
+[ext_resource type="Texture2D" uid="uid://o5k5lj0pg78w" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00023.png" id="24_r1wde"]
+[ext_resource type="Texture2D" uid="uid://cq1rpbyaail88" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00024.png" id="25_kddm2"]
+[ext_resource type="Texture2D" uid="uid://220i85g8r4iw" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00025.png" id="26_a5dmh"]
+[ext_resource type="Texture2D" uid="uid://bci5sng6ml1dg" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00026.png" id="27_wdum2"]
+[ext_resource type="Texture2D" uid="uid://t4rl0my17ts8" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00027.png" id="28_227n3"]
+[ext_resource type="Texture2D" uid="uid://c5gwgbayy84c3" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00028.png" id="29_xxiyv"]
+[ext_resource type="Texture2D" uid="uid://c3w8p0anqm7an" path="res://assets/Plant Animations/Plant 8 Poison/PlantPosion_00029.png" id="30_c877t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vuvfu"]
+radius = 163.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_68btr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5f3mb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_2hgj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fx4kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pc8jb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tbasi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_iunso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_gcvix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_do1ws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0hiih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6daq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_h7ug2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cgt3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_33dj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gf762")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_uk6d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_fkpby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_2ikgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_x8cf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dsigg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_lxg6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tfwru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6eu2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_sin3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_r1wde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_kddm2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_a5dmh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wdum2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_227n3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_xxiyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_c877t")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[node name="Obstacle" type="Area2D"]
+collision_layer = 0
+script = ExtResource("1_2ewal")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vuvfu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(17, 24)
+sprite_frames = SubResource("SpriteFrames_68btr")
+autoplay = "default"
+frame_progress = 0.00506621
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
