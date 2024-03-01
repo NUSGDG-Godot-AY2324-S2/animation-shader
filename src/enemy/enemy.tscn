@@ -1,8 +1,9 @@
-[gd_scene load_steps=34 format=3 uid="uid://dhfbe38ci8xcj"]
+[gd_scene load_steps=36 format=3 uid="uid://dhfbe38ci8xcj"]
 
 [ext_resource type="Texture2D" uid="uid://kal11bkoab0s" path="res://assets/SlimeOrange/SlimeOrange_00000.png" id="1_2q1h0"]
 [ext_resource type="Script" path="res://enemy/enemy.gd" id="1_ugpta"]
 [ext_resource type="Texture2D" uid="uid://1afctpctl2td" path="res://assets/SlimeOrange/SlimeOrange_00001.png" id="2_oesgi"]
+[ext_resource type="Shader" path="res://shader/flash.gdshader" id="2_oeycb"]
 [ext_resource type="Texture2D" uid="uid://cg2g71ffdkilq" path="res://assets/SlimeOrange/SlimeOrange_00002.png" id="3_u35wo"]
 [ext_resource type="Texture2D" uid="uid://cgp5476d3ic26" path="res://assets/SlimeOrange/SlimeOrange_00003.png" id="4_23u6s"]
 [ext_resource type="Texture2D" uid="uid://crsdchd3r8pxo" path="res://assets/SlimeOrange/SlimeOrange_00004.png" id="5_ejueb"]
@@ -34,6 +35,12 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oiqsk"]
 size = Vector2(308, 212)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3oyr0"]
+resource_local_to_scene = true
+shader = ExtResource("2_oeycb")
+shader_parameter/flash_color = Color(0.745098, 0.141176, 0, 1)
+shader_parameter/flash_modifier = 0.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jtx8n"]
 animations = [{
@@ -142,6 +149,7 @@ script = ExtResource("1_ugpta")
 shape = SubResource("RectangleShape2D_oiqsk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_3oyr0")
 position = Vector2(-9, -28)
 sprite_frames = SubResource("SpriteFrames_jtx8n")
 frame_progress = 0.939954
@@ -150,4 +158,9 @@ frame_progress = 0.939954
 wait_time = 2.0
 autostart = true
 
+[node name="FlashTimer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
 [connection signal="timeout" from="MovementTimer" to="." method="_on_movement_timer_timeout"]
+[connection signal="timeout" from="FlashTimer" to="." method="_on_flash_timer_timeout"]

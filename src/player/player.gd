@@ -15,6 +15,8 @@ var health: int = MAX_HEALTH
 var can_attack: bool = true
 const BulletResource = preload("res://player/skills/bullet.tscn")
 
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+
 
 func _physics_process(delta):
 	make_movement()
@@ -89,6 +91,13 @@ func take_damage(damage: int):
 	print("health left ", health)
 	if health < 0:
 		die()
+		return
+	flash()
+
+
+func flash():
+	sprite.material.set_shader_parameter("flash_modifier", 0.8)
+	$FlashTimer.start()
 
 
 func die():
@@ -107,3 +116,7 @@ func attack():
 
 func _on_attack_timer_timeout():
 	can_attack = true
+
+
+func _on_flash_timer_timeout():
+	sprite.material.set_shader_parameter("flash_modifier", 0)
